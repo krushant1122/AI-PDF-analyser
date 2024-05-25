@@ -11,10 +11,10 @@ from database import SessionLocal, Document
 
 # Check if the model is installed, if not, install it
 try:
-    nlp = spacy.load("en_core_web_trf")
+    nlp = spacy.load("en_core_web_sm")
 except OSError:
-    download("en_core_web_trf")
-    nlp = spacy.load("en_core_web_trf")
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 class QuestionRequest(BaseModel):
     document_id: int
