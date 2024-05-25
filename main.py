@@ -1,3 +1,5 @@
+import spacy
+from spacy.cli import download
 from fastapi import FastAPI, UploadFile, File, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -6,7 +8,13 @@ import fitz  # PyMuPDF
 import logging
 from transformers import pipeline
 from database import SessionLocal, Document
-import textwrap
+
+# Check if the model is installed, if not, install it
+try:
+    nlp = spacy.load("en_core_web_trf")
+except OSError:
+    download("en_core_web_trf")
+    nlp = spacy.load("en_core_web_trf")
 
 class QuestionRequest(BaseModel):
     document_id: int
@@ -79,4 +87,4 @@ async def ask_question(request: QuestionRequest, db: Session = Depends(get_db)):
     
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
