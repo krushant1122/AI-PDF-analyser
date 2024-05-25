@@ -1,7 +1,7 @@
-fastapi
-uvicorn
-sqlalchemy
-PyMuPDF
-pydantic
-transformers
-spacy==3.2.4  # Specific version known to work well
+fastapi==0.68.0
+uvicorn==0.15.0
+sqlalchemy==1.4.22
+PyMuPDF==1.18.17
+pydantic==1.8.2
+transformers==4.9.2
+spacy==3.1.4
