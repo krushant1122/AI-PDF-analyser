@@ -111,4 +111,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 6. **Contributing**: Encourages contributions.
 7. **License**: Specifies the license under which the project is distributed.
 
-Feel free to customize the README further to fit your specific project details and repository links.
+
