@@ -4,4 +4,4 @@ sqlalchemy
 PyMuPDF
 pydantic
 transformers
-spacy
+spacy==3.2.4  # Specific version known to work well
