@@ -28,7 +28,6 @@ dnspython==2.6.1
 docopt==0.6.2
 easygui==0.98.3
 email_validator==2.1.1
-en-core-web-trf==3.7.1
 enum34==1.1.10
 et-xmlfile==1.1.0
 exceptiongroup==1.2.1
