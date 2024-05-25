@@ -1,3 +1,5 @@
+![image](https://github.com/krushant1122/AI-PDF-analyser/assets/63834509/aba3eccf-0399-43e7-a17f-6ba8405c0f6a)
+
 # PDF NLP Application
 
 This is a PDF NLP application built with FastAPI and React. The backend extracts text from uploaded PDF files and allows users to ask questions about the content. The frontend is a React application that interacts with the FastAPI backend.
